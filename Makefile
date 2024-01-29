@@ -1,4 +1,4 @@
-.PHONY: start stop open-mysql open-bash
+.PHONY: start stop open-mysql open-mysql-bash open-bash
 
 start:
 	@docker compose up -d
@@ -13,4 +13,4 @@ open-mysql-bash:
 	@docker exec -it php7-0_ubuntu-mysql-1 bash
 
 open-bash:
-	@docker exec -it php7-0_ubuntu-apache-1 bash -c "cd /var/www/html"
+	@docker exec -it php7-0_ubuntu-apache-1 bash -c "cd /var/www/html && bash"
