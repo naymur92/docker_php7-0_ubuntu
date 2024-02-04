@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP 7 - Apache Projects</title>
+    <title>PHP 8.3 - Ubuntu Projects</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome CSS -->
@@ -16,8 +16,9 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 g-4">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header d-flex justify-content-between align-items-center">
                         <h1>Project List</h1>
+                        <a class="btn btn-sm btn-success" href="phpinfo.php">phpInfo</a>
                     </div>
                     <div class="card-body">
                         <ul class="list-group">
@@ -49,8 +50,7 @@
                                     closedir($handle);
                                 }
                             } else {
-                                // echo '<li class="list-group-item">No Project in list!</li>';
-                                echo phpinfo();
+                                echo '<li class="list-group-item">No Project in list!</li>';
                             }
                             ?>
                         </ul>
