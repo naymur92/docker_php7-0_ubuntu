@@ -25,7 +25,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 RUN a2enmod rewrite
 
 # Expose port
-EXPOSE 80
+EXPOSE 90
 
 # Start Apache in the foreground
 CMD ["apache2ctl", "-D", "FOREGROUND"]
