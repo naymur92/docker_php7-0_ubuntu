@@ -13,7 +13,7 @@ RUN LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
 RUN apt-get update
 
 # Install Apache, PHP 7.0, git, zip, unzip, curl, soap, Composer, and required PHP extensions
-RUN apt-get install -y apache2 php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-mysqli php7.0-mbstring php7.0-xml git php7.0-zip php7.0-mcrypt php7.0-curl php7.0-soap && \
+RUN apt-get install -y apache2 php7.0 libapache2-mod-php7.0 php7.0-mysql php7.0-mysqli php7.0-mbstring php7.0-xml git php7.0-zip php7.0-mcrypt php7.0-curl php7.0-soap php7.0-gd && \
     apt-get clean
 
 # Install Composer
